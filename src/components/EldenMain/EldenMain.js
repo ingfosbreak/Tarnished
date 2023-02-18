@@ -8,7 +8,7 @@ import foreground from '../../assets/EldenMain/foreground.png';
 import logo from '../../assets/EldenMain/logo.png';
 
 
-import useScrollPosition from '../../containers/ScrollY/scrollY.js';
+import useScrollYPosition from '../../containers/ScrollY/scrollY';
 import cloud1 from '../../assets/cloud1.png'
 import cloud2 from '../../assets/cloud2.png'
 import cloud3 from '../../assets/cloud3.png'
@@ -18,7 +18,7 @@ import React from 'react';
 
 function EldenMain() {
 
-    const scrolling = useScrollPosition();
+    const scrolling = useScrollYPosition();
     const style = { transform: 'translateY('+scrolling * 0.25+'px)'};
     const foregroundstyle = { transform: 'translateY('+scrolling * 0+'px)'};
     const backgroundstyle = { transform: 'translateY('+scrolling * 0.25+'px)'};
@@ -26,6 +26,8 @@ function EldenMain() {
     const logostyle = { transform: 'translateY('+scrolling * -0.3+'px)'
                         ,     
                         };
+
+    
 
   
 
