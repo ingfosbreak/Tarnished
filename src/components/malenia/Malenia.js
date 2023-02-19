@@ -1,5 +1,5 @@
 import './Malenia.css'
-
+import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 
 function Malenia() {
     return (
