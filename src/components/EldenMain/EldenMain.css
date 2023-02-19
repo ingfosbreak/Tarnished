@@ -1,151 +1,96 @@
-@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus&display=swap');
-
-*
-{
-    scroll-behavior: smooth;
-    
-}
-.block
-{
-    overflow-x: hidden;
-    overflow-y: hidden;
-    display: block;
-}
-.block::after
-{
-    content: '';
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 100px;
-    background: linear-gradient(to top,black, transparent);
-    z-index: 200;
-}
-.Main {
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    display: flex;
+.Container{
     height: 100vh;
-
-    background-repeat: no-repeat;
-    
-    
-    
-}
-
-.sec
-{
-    position: relative;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     overflow: hidden;
+    
+    
 }
 
-.sec img
-{
-    position:absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    pointer-events: none;
-    filter: saturate(0);
-}
-.sec #logo
-{   
+.animation, .animation_layer {
+	height: 100%
     
-    width: 100%;
+}
+
+.animation {
+    overflow: hidden;
+  display: block;
+	position: relative;
+	z-index: 10;
+    
+}
+
+.animation_layer {
+    display: block;
+	background-position: top center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	position: absolute;
+    
+}
+#song{
+    position: absolute;
+    z-index: 300;
+    width: 2px;
+}
+
+#background {
+  background-image: url(../../assets/EldenMain/background.png);
+  filter: saturate(0);
+}
+
+#logo {
+    background-image: url(../../assets/EldenMain/logo.png);
     height: 75%;
-    object-fit: contain;
+    background-size: contain;
     filter: drop-shadow(0 0 0.75rem rgb(238, 230, 139));
     backdrop-filter: blur(1px) saturate(1);
 }
 
-.sec #foreground
-{
-    z-index: 100;
-    
-}
-.sec #character
-{
-    z-index: 100;
-    
 
-}
-.sec #cape
-{
-    z-index: 100;
-    
+#cape {
+    background-image: url(../../assets/EldenMain/capegif.gif);
+    filter: saturate(0);
+    z-index: 150;
 }
 
-
-
-
-/* @keyframes capemove {
-    0% {
-        transform: rotateX(2deg) rotateY(0deg) translateZ(0px);
-      }
-      100% {   
-        transform: rotateX(2deg + 180deg) rotateY(360deg) translateZ(0px);
-      }
-} */
-
-
-
-
-.first-img
-{
-
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
-    
-
+#character{
+    background-image: url(../../assets/EldenMain/character.png);
+    filter: saturate(0);
+    z-index: 150;
 }
 
-.clouds
-{
-    position:absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+#foreground {
+    background-image: url(../../assets/EldenMain/foreground.png);
+    filter: saturate(0);
+    z-index: 150;
+}
+
+
+.wrapper{
+    background: transparent;
     height: 100%;
-    overflow: hidden;
 }
 
-.cloud 
-{
-    position: absolute;
-    bottom: 0;
-    
-    max-width: 100%;
 
+
+
+#c1
+{
+    background-image: url(../../assets/clouds/cloud5.png);
+    opacity:15%;
+    z-index: 140;
+    bottom: 0;
+    animation: cloudmove calc(8s * 3) linear infinite;
+}
+
+#c5
+{
+    background-image: url(../../assets/clouds/cloud5.png);
+    opacity: 10%;
+    z-index: 200;
+    bottom: 0;
     animation: cloudmove calc(8s * var(--i)) linear infinite;
 }
-.clouds #c1
-{
-    opacity: 15%;
-    z-index: 101;
-}
-.clouds #c2
-{
-    opacity: 25%;
-    z-index: 101;
-}
-
-.clouds #c3
-{
-    opacity: 15%;
-    z-index: 99;
-}
-
-
 
 
 
@@ -160,51 +105,13 @@
     }
 }
 
-.first-txt {
+.transition1::after
+{
+    content: '';
     position: absolute;
-    font-family: 'EldenRing';
-    /* font-family: 'Gentium Book Plus', serif; */
-    /* font-family: 'Gambetta', serif; */
-    top: 170px;
-    font-size: 8em;
-    
-    text-transform: capitalize;
-    letter-spacing: 5px;
-    transition: 700ms ease;
-    font-variation-settings: "wght" 311;
-    outline: none;
-    margin-bottom: 0.8rem;
-    
-    background: -webkit-linear-gradient(rgb(215, 206, 132), #214847);
-    
-    
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
-    filter: drop-shadow(0 0 0.75rem rgb(238, 230, 139));
-    backdrop-filter: blur(1px) saturate(1);
-    
-
-    background-image: url('../../assets/EldenMain/fonttexture.jpg'); /* Change URL to texture file name */
-    background-repeat: repeat;
-    background-position: center center;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
-  
-    
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top,black, transparent);
+    z-index: 200;
 }
-
-.first-txt:hover {
-    font-variation-settings: "wght" 582; 
-    letter-spacing: 10px;
-}
-
-@font-face {
-    font-family: "EldenRing";
-    src: local('MantiniaRegular'),
-    url('../../assets/Mantinia Regular/MantiniaRegular.otf') format("otf");
-}
-
-
-

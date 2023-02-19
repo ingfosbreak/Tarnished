@@ -1,0 +1,31 @@
+
+
+#margit
+{
+
+    background-image: url(../../assets/rozen/margit.jpg);
+}
+
+.margit-txt
+{   
+    position: absolute;
+    display: inline-block;
+    color: white;
+    
+    margin-top: 30%;
+    margin-left: 5%;
+    
+    z-index: 3;
+
+    font-family: 'EldenRing';
+
+    text-transform: capitalize;
+    letter-spacing: 5px;
+    transition: 700ms ease;
+    font-variation-settings: "wght" 311;
+    outline: none;
+    font-size: 2.5em;
+    font-style: italic;
+    overflow-y: hidden;
+    
+}
