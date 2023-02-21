@@ -1,0 +1,121 @@
+
+#four-1 {
+    background-image: url(../../assets/4EMP/41.png);
+    width: 90%;
+    height: 100%;
+    margin-left: 5%;
+    background-size: contain;
+    position: absolute;
+   
+    
+    
+
+}
+
+
+#four-2 {
+    background-image: url(../../assets/4EMP/42.png);
+    width: 90%;
+    height: 100%;
+    margin-left: 5%;
+    background-size: contain;
+    position: absolute;
+   
+   
+    
+    
+
+}
+#four-3 {
+    background-image: url(../../assets/4EMP/43.png);
+    width: 90%;
+    height: 100%;
+    margin-left: 5%;
+    background-size: contain;
+    position: absolute;
+   
+   
+    
+    
+
+}
+#four-4 {
+    background-image: url(../../assets/4EMP/44.png);
+    width: 90%;
+    height: 100%;
+    margin-left: 5%;
+    background-size: contain;
+    position: absolute;
+   
+    
+    
+
+}
+
+
+
+
+.wrapper6{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    
+
+    
+}
+
+
+.ink-txt
+{   
+    position: absolute;
+    display: inline-block;
+    color:  linear-gradient( rgba(237,200,39,1), rgba(255,255,255,1) 100%);
+    
+    margin-top: 30%;
+    margin-left: 7%;
+    
+    z-index: 3;
+
+    font-family: 'EldenRing';
+
+    text-transform: uppercase;
+    
+    
+    transition: 700ms ease;
+    font-variation-settings: "wght" 311;
+    outline: none;
+    font-size: 7.5em;
+
+    
+    
+    
+    overflow-y: hidden;
+    -webkit-text-stroke: 3px;
+    -webkit-text-stroke-color: black;
+}
+#four
+{
+
+
+    margin-left: 15%;
+    filter: drop-shadow(0 0 2rem black);
+}
+
+#emp-txt
+{
+
+    background-image: url(../../assets/4EMP/four4.png);
+    width: 90%;
+    height: 100%;
+    margin-left: 6%;
+    margin-top: 2.5%;
+    background-size: contain;
+    position: absolute;
+
+    filter: drop-shadow(0 0 2rem black);
+   
+
+}

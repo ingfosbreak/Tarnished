@@ -1,0 +1,14 @@
+#wanted {
+    background-image: url(../../assets/Ink/wanted-poster.png);
+    width: 100vh;
+    height: 135%;
+    background-size: contain;
+    position: absolute;
+    margin-left: 10%;
+    margin-top: 0%;
+    transform: rotate(-15deg);
+    transform: rotate3d(1,1,1, -20deg); 
+    
+    
+
+}
