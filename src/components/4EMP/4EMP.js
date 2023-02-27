@@ -2,7 +2,14 @@ import './4EMP.css'
 
 
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
+
+
+
 function Four(){
+  
+             
+
+
     return (
         
         <div class = 'wrapper6'>

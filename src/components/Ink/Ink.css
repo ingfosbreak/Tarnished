@@ -4,11 +4,237 @@
     height: 135%;
     background-size: contain;
     position: absolute;
-    margin-left: 10%;
+    margin-left: 0%;
     margin-top: 0%;
-    transform: rotate(-15deg);
+    transform: rotate(-9deg);
     transform: rotate3d(1,1,1, -20deg); 
+    z-index: 1;
     
     
+
+}
+
+.wrapper7{
+    background: transparent;
+    height: 100%;
+}
+
+
+
+.wrapper8{
+    background: transparent;
+    height: 100%;
+    overflow: hidden;
+}
+
+.wrapper9{
+    background: transparent;
+    height: 100%;
+}
+
+#main{
+    background-image: url(../../assets/Ink/ink1/main.png);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+#main::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(to top,transparent,black);
+    z-index: 200;
+
+}
+
+#left-hel
+{
+    background-image: url(../../assets/Ink/ink1/left-hel.png);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+
+}
+
+#in-hel
+{
+    background-image: url(../../assets/Ink/ink1/in-hel.png);
+    margin-top: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+#out-hel
+{
+    background-image: url(../../assets/Ink/ink1/out-hel.png);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+
+#down-hel
+{
+    background-image: url(../../assets/Ink/ink1/down-hel.png);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+
+
+
+#back
+{
+    background-image: url(../../assets/Ink/ink2/back.png);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    filter: saturate(0.3);
+}
+
+
+#foreground-ink2
+{
+    background-image: url(../../assets/Ink/ink2/foreground.png);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    filter: saturate(0.75);
+    
+}
+
+#hair
+{
+    background-image: url(../../assets/Ink/ink2/hair.gif);
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20%;
+    background-size: cover;
+    filter: saturate(0);
+}
+#jesus
+{
+    background-image: url(../../assets/Ink/ink2/jesus.png);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    filter: saturate(0);
+}
+#sword
+{
+    background-image: url(../../assets/Ink/ink2/sword.png);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    filter: saturate(0);
+}
+
+.transition-ink2::after
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    background: linear-gradient(to top,black, transparent);
+    z-index: 200;
+}
+
+.transition-ink1::after
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top,black, transparent);
+    z-index: 200;
+}
+
+
+.nd{
+    height: 100vh;
+    z-index: 10;
+    background-color: black;
+  
+  }
+
+
+.Ink2-txt
+{   
+    
+    margin-top: 20%;
+    margin-left: 10%;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    position: absolute;
+    color: white;
+    font-size: 10em;
+    opacity: 50%;
+
+    font-family: 'EldenRing';
+    display: block;
+
+}
+
+.InkB-txt
+{   
+    
+    margin-top: 10%;
+    margin-left: 53%;
+    
+    margin-bottom: 0;
+    position: absolute;
+    color: white;
+    font-size: 3.3em;
+    /* font-style: italic; */
+
+    font-family: 'EldenRing';
+    display: block;
+    z-index: 10;
+    transform: rotate(-9deg);
+    filter: drop-shadow(0 0 1rem rgb(238, 230, 139));
+}
+
+.InkB-txt2
+{   
+    
+    margin-top: 25%;
+    margin-left: 53%;
+    
+    margin-bottom: 0;
+    position: absolute;
+    color: white;
+    font-size: 2.8em;
+    font-style: italic;
+
+    font-family: 'EldenRing';
+    display: block;
+    transform: rotate(-9deg);
+    z-index: 10;
+    filter: drop-shadow(0 0 1rem rgb(238, 230, 139));
+
+}
+
+
+.InkB-txt3
+{   
+    
+    margin-top: 40%;
+    margin-left: 53%;
+    
+    margin-bottom: 0;
+    position: absolute;
+    color: white;
+    font-size: 2.8em;
+    font-style: italic;
+
+    font-family: 'EldenRing';
+    display: block;
+    transform: rotate(-9deg);
+    z-index: 10;
+    filter: drop-shadow(0 0 1rem rgb(238, 230, 139));
 
 }
