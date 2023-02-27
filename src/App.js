@@ -3,7 +3,6 @@ import { useEffect, useRef, useState } from 'react';
 
 import './App.css';
 import './components/Intro/Intro';
-
 import './components/Ink/Ink.css';
 
 
@@ -21,15 +20,28 @@ import './components/EldenMain/EldenMain.css'
 import './components/Intro/Intro.css'
 import './components/Ink/Ink.css'
 
+
+let p;
+let paraRef; 
+
 function App() {
-  const parallax = useRef(null)
+  const Pages = 10;
+  const parallax = useRef(null);
+  
+  p = Pages;
+  paraRef = parallax;
+
+
+
+  
+
   
 
   
   return (
     <div className="Container">
           
-        <Parallax pages={10} style={{ top: '0', left: '0' }} class="animation" ref={parallax}>
+        <Parallax pages={Pages} style={{ top: '0', left: '0' }} class="animation" ref={parallax}>
           
           <EldenMain />
 
@@ -53,7 +65,7 @@ function App() {
           <Ink1 />
           
      
-          <p class='InkB-txt'> AKA MOON LORD</p>
+          
           
 
 
@@ -81,3 +93,4 @@ function App() {
 }
 
 export default App;
+export { p, paraRef };

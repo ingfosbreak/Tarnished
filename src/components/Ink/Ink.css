@@ -60,10 +60,10 @@
 #in-hel
 {
     background-image: url(../../assets/Ink/ink1/in-hel.png);
-    margin-top: 0;
     width: 100%;
     height: 100%;
     background-size: cover;
+    transition-timing-function: ease-out;
 }
 #out-hel
 {
@@ -71,6 +71,7 @@
     width: 100%;
     height: 100%;
     background-size: cover;
+    transition-timing-function: ease-out;
 }
 
 
@@ -80,6 +81,7 @@
     width: 100%;
     height: 100%;
     background-size: cover;
+    transition-timing-function: ease-out;
 }
 
 
