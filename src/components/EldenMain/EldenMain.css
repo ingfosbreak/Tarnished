@@ -42,8 +42,8 @@
     background-image: url(../../assets/EldenMain/logo.png);
     height: 75%;
     background-size: contain;
-    filter: drop-shadow(0 0 0.75rem rgb(238, 230, 139));
-    backdrop-filter: blur(1px) saturate(1);
+    filter: drop-shadow(0 0 2rem rgb(238, 230, 139));
+    /* backdrop-filter: blur(1px) saturate(1); */
 }
 
 
