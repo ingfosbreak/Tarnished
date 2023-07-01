@@ -14,7 +14,7 @@ import Malenia from './components/malenia/Malenia.js';
 import Four from './components/4EMP/4EMP.js';
 import Ink1 from './components/Ink/Ink.js';
 import Ink2 from './components/Ink/Ink2.js';
-
+import InkArt from './components/Ink/InkArt.js';
 
 import './components/EldenMain/EldenMain.css'
 import './components/Intro/Intro.css'
@@ -25,7 +25,7 @@ let p;
 let paraRef; 
 
 function App() {
-  const Pages = 10;
+  const Pages = 15;
   const parallax = useRef(null);
   
   p = Pages;
@@ -63,6 +63,9 @@ function App() {
           <Four />
           
           <Ink1 />
+
+          <InkArt />
+
           
      
           

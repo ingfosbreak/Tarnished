@@ -87,9 +87,9 @@ function Ink1() {
           <div class="animation_layer" id="down-hel" style={style3}></div>
           </ParallaxLayer>
 
-          <ParallaxLayer offset={8.7} speed={0.4}>
+          {/* <ParallaxLayer offset={8.7} speed={0.4}>
             <div class ='transition-ink1'></div>
-            </ParallaxLayer>
+            </ParallaxLayer> */}
           
 {/* 
           <ParallaxLayer offset={4} speed={1.5}>

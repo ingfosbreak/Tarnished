@@ -40,6 +40,9 @@
 
 #logo {
     background-image: url(../../assets/EldenMain/logo.png);
+    /* ตั้ง width เพราะมันใหญ่ไปแล้วกดเพลงได้ทั้งหน้า*/
+    width: 55%;
+    margin-left: 21%;
     height: 75%;
     background-size: contain;
     filter: drop-shadow(0 0 2rem rgb(238, 230, 139));
